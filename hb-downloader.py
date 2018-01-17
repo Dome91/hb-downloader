@@ -64,7 +64,9 @@ for cv in game_keys:
                 continue
 
             for cds in cd.download_structs:
-                humble_downloads.append(HumbleDownload(cd, cds, co, csp, cv))
+                if ConfigData.file_formats.get(cds.name, False):
+                        humble_downloads.append(HumbleDownload(cd, cds, co, csp, cv))
+
 
 ProgressTracker.reset()
 ProgressTracker.item_count_total = len(humble_downloads)

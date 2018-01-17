@@ -19,7 +19,7 @@ class ProgressTracker(object):
     @staticmethod
     def assign_download(hd):
         ProgressTracker.current_product = hd.product_name
-        ProgressTracker.current_subproduct = hd.subproduct_name
+        ProgressTracker.current_subproduct = hd.subproduct_human_name
         ProgressTracker.current_download = hd.machine_name
 
     @staticmethod

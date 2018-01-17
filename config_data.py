@@ -20,11 +20,12 @@ class ConfigData(object):
     resume_downloads = True
 
     download_platforms = {
-        'audio': True,
         'ebook': True,
-        'windows': True,
-        'mac': True,
-        'linux': True,
-        'android': True,
-        'asmjs': False
+    }
+
+    file_formats = {
+        'CBZ': True,
+        'PDF': True,
+        'EPUB': True,
+        'PDF (HQ)': True
     }

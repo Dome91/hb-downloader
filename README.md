@@ -1,5 +1,12 @@
+# Changes in this fork
+I needed a utility to download all my comic books from HumbleBundle.
+The forked project would let me download all eBooks, but this would download the PDF, PDF (HQ) and CBZ versions of the books.
+I just wanted to get the CBZ version.
+So with this utility, you can only download eBooks (and comics), but you can choose the format.
+Just set the desired file-formats to true in hb-downloader-settings.yaml.
+
 # hb-downloader
-An automated utility to download your Humble Bundle purchases with support for the Authy token.
+An automated utility to download your Humble Bundle eBook - purchases with support for the Authy token.
 
     http://www.humblebundle.com
 

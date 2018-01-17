@@ -22,11 +22,10 @@ default_params:
   ajax: True
 
 download-platforms:
-  audio: True
   ebook: True
-  windows: True
-  mac: True
-  linux: True
-  android: True
-  asmjs: False
 
+file-formats:
+  CBZ: True
+  PDF: False
+  EPUB: False
+  PDF (HQ): False

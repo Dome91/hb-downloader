@@ -45,6 +45,7 @@ class Configuration(object):
             saved_config = yaml.safe_load(f)
 
         ConfigData.download_platforms = saved_config.get("download-platforms", ConfigData.download_platforms)
+        ConfigData.file_formats = saved_config.get("file-formats", ConfigData.file_formats)
         ConfigData.write_md5 = saved_config.get("write_md5", ConfigData.write_md5)
         ConfigData.read_md5 = saved_config.get("read_md5", ConfigData.read_md5)
         ConfigData.force_md5 = saved_config.get("force_md5", ConfigData.force_md5)

@@ -17,6 +17,7 @@ class HumbleDownload(object):
     product_name = ""
     product_name_machine = ""
     subproduct_name = ""
+    subproduct_human_name = ""
     download_url = ""
     humble_file_size = 0
     humble_file_size_human = ""
@@ -35,6 +36,7 @@ class HumbleDownload(object):
         self.product_name = co.product.human_name
         self.product_name_machine = co.product.machine_name
         self.subproduct_name = csp.product_name
+        self.subproduct_human_name = csp.human_name
         self.humble_md5 = cds.md5
         self.machine_name = cd.machine_name
 
